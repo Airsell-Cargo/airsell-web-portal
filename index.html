@@ -5,50 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airsell Cargo | Hargeisa Freight Forwarding</title>
     <style>
-        :root { --airsell-red: #d32f2f; --airsell-green: #2e7d32; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f4; }
-        header { background: #000; color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid var(--airsell-red); }
-        .logo { height: 120px; margin-bottom: 10px; }
-        .track-section { text-align: center; margin-top: -30px; }
-        .track-box { background: white; padding: 30px; display: inline-block; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 80%; max-width: 500px; }
-        .btn { background: var(--airsell-red); color: white; border: none; padding: 12px 25px; border-radius: 4px; cursor: pointer; font-weight: bold; }
-        .services { display: flex; justify-content: center; gap: 20px; padding: 50px 20px; flex-wrap: wrap; }
-        .card { background: white; padding: 20px; width: 250px; border-radius: 8px; text-align: center; border-top: 4px solid var(--airsell-green); }
+        :root { 
+            --airsell-red: #d32f2f; 
+            --airsell-green: #2e7d32; 
+            --dark-bg: #000000;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+
+        /* HEADER RE-ARRANGEMENT (Logo Side-by-Side) */
+        header { 
+            background: var(--dark-bg); 
+            color: white; 
+            padding: 20px 5%; 
+            border-bottom: 5px solid var(--airsell-red);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .logo { 
+            height: 90px; 
+            width: auto; 
+            transition: transform 0.3s ease;
+        }
+
+        .header-text { text-align: left; }
+        .header-text h1 { margin: 0; font-size: 1.8rem; letter-spacing: 2px; }
+        .header-text p { margin: 5px 0 0 0; color: #adadad; font-style: italic; font-size: 0.9rem; }
+
+        /* TRACKING SECTION */
+        .track-section { text-align: center; margin-top: -35px; padding: 0 15px; }
+        .track-box { 
+            background: white; 
+            padding: 30px; 
+            display: inline-block; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            width: 100%; 
+            max-width: 550px; 
+        }
+
+        .track-box input { 
+            padding: 12px; 
+            width: 60%; 
+            border: 1px solid #ddd; 
+            border-radius: 4px 0 0 4px; 
+            outline: none;
+        }
+
+        .btn { 
+            background: var(--airsell-red); 
+            color: white; 
+            border: none; 
+            padding: 13px 25px; 
+            border-radius: 0 4px 4px 0; 
+            cursor: pointer; 
+            font-weight: bold;
+            margin-left: -5px; /* Joins input and button */
+        }
+
+        .btn:hover { background: #b71c1c; }
+
+        /* SERVICES CARDS */
+        .services { 
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+            padding: 60px 20px; 
+            flex-wrap: wrap; 
+        }
+
+        .card { 
+            background: white; 
+            padding: 25px; 
+            width: 280px; 
+            border-radius: 8px; 
+            text-align: center; 
+            border-top: 5px solid var(--airsell-green);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-text { text-align: center; }
+            .track-box input { width: 100%; border-radius: 4px; margin-bottom: 10px; }
+            .btn { width: 100%; border-radius: 4px; margin-left: 0; }
+        }
+
+        footer { text-align: center; padding: 30px; color: #666; font-size: 0.85em; }
+        footer a { color: var(--airsell-red); text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.jpg" alt="Airsell Cargo" class="logo">
-    <h1>AIRSELL CARGO</h1>
-    <p>Connecting East Africa to the World</p>
+    <div class="header-container">
+        <img src="logo.jpg" alt="Airsell Cargo" class="logo">
+        <div class="header-text">
+            <h1>AIRSELL CARGO</h1>
+            <p>Connecting East Africa to the World</p>
+        </div>
+    </div>
 </header>
 
 <div class="track-section">
     <div class="track-box">
-        <h3>Quick Track Shipment</h3>
-        <input type="text" placeholder="Enter AWB Number..." style="padding: 10px; width: 60%;">
+        <h3 style="margin-top:0;">Quick Track Shipment</h3>
+        <input type="text" placeholder="Enter AWB Number...">
         <button class="btn">Track</button>
+        <p style="font-size: 0.75rem; color: #999; margin-top: 15px;">Official IATA CargoLink & FIATA Member</p>
     </div>
 </div>
 
 <div class="services">
     <div class="card">
+        <div style="font-size: 40px; margin-bottom: 10px;">✈️</div>
         <h3>Air Freight</h3>
-        <p>IATA-Standard cargo handling via HGA Hub.</p>
+        <p>IATA-Standard cargo handling via HGA Hub for general and specialized cargo.</p>
     </div>
     <div class="card">
+        <div style="font-size: 40px; margin-bottom: 10px;">🐐</div>
         <h3>Livestock Export</h3>
-        <p>Specialized regional export logistics.</p>
+        <p>Specialized regional export logistics with full health compliance.</p>
     </div>
     <div class="card">
+        <div style="font-size: 40px; margin-bottom: 10px;">🚢</div>
         <h3>Sea Freight</h3>
-        <p>Global consolidation and sea freight solutions.</p>
+        <p>Global consolidation and sea freight solutions for high-volume trade.</p>
     </div>
 </div>
 
-<footer style="text-align: center; padding: 20px; color: #666; font-size: 0.8em;">
-    <p>© 2026 Airsell Cargo Service Agent | <a href="https://github.com/Airsell-Cargo/airsell-web-portal/wiki">Internal Portal</a></p>
+<footer>
+    <p>© 2026 Airsell Cargo Service Agent | <a href="https://github.com/Airsell-Cargo/airsell-web-portal/wiki">Internal Operational Portal</a></p>
+    <p style="margin-top: 5px; color: #999;">Hargeisa, Somaliland</p>
 </footer>
 
 </body>
