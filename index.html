@@ -3,44 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airsell Cargo | Trusted Logistics Partner</title>
+    <title>Airsell Cargo | Hargeisa Freight Forwarding</title>
     <style>
-        :root { --airsell-red: #d32f2f; --airsell-green: #2e7d32; --charcoal: #333; }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--charcoal); }
-        header { background: #000; color: white; padding: 20px; text-align: center; }
-        .hero { background: #f4f4f4; padding: 50px 20px; text-align: center; border-bottom: 4px solid var(--airsell-red); }
-        .track-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); display: inline-block; margin-top: -40px; width: 80%; max-width: 500px; }
-        .btn { background: var(--airsell-red); color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
-        .certifications { padding: 40px; text-align: center; font-weight: bold; color: var(--airsell-green); }
+        :root { --airsell-red: #d32f2f; --airsell-green: #2e7d32; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f4; }
+        header { background: #000; color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid var(--airsell-red); }
+        .logo { height: 120px; margin-bottom: 10px; }
+        .track-section { text-align: center; margin-top: -30px; }
+        .track-box { background: white; padding: 30px; display: inline-block; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 80%; max-width: 500px; }
+        .btn { background: var(--airsell-red); color: white; border: none; padding: 12px 25px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .services { display: flex; justify-content: center; gap: 20px; padding: 50px 20px; flex-wrap: wrap; }
+        .card { background: white; padding: 20px; width: 250px; border-radius: 8px; text-align: center; border-top: 4px solid var(--airsell-green); }
     </style>
 </head>
 <body>
 
-<header style="background: #000; color: white; padding: 20px; text-align: center;">
-    <img src="logo.jpg" alt="Airsell Cargo Logo" style="height: 120px; width: auto; margin-bottom: 10px;">
-    <h1 style="margin: 5px 0;">AIRSELL CARGO</h1>
-    <p style="margin: 0; color: #ccc;">Connecting East Africa to the World</p>
+<header>
+    <img src="logo.jpg" alt="Airsell Cargo" class="logo">
+    <h1>AIRSELL CARGO</h1>
+    <p>Connecting East Africa to the World</p>
 </header>
 
-<section class="hero">
-    <h2>Reliable Freight Forwarding Solutions</h2>
-    <p>IATA CargoLink Member | FIATA Member | Hargeisa, Somaliland</p>
-</section>
-
-<div style="text-align: center;">
+<div class="track-section">
     <div class="track-box">
-        <h3>Quick Track Your Cargo</h3>
-        <input type="text" placeholder="Enter AWB Number..." style="padding: 10px; width: 70%;">
+        <h3>Quick Track Shipment</h3>
+        <input type="text" placeholder="Enter AWB Number..." style="padding: 10px; width: 60%;">
         <button class="btn">Track</button>
     </div>
 </div>
 
-<div class="certifications">
-    <span>✓ IATA COMPLIANT</span> &nbsp;&nbsp; | &nbsp;&nbsp; <span>✓ FIATA ACCREDITED</span>
+<div class="services">
+    <div class="card">
+        <h3>Air Freight</h3>
+        <p>IATA-Standard cargo handling via HGA Hub.</p>
+    </div>
+    <div class="card">
+        <h3>Livestock Export</h3>
+        <p>Specialized regional export logistics.</p>
+    </div>
+    <div class="card">
+        <h3>Sea Freight</h3>
+        <p>Global consolidation and sea freight solutions.</p>
+    </div>
 </div>
 
-<footer style="text-align: center; padding: 20px; font-size: 0.8em;">
-    <p>© 2026 Airsell Cargo Service Agent. Last Updated: 2026-04-03</p>
+<footer style="text-align: center; padding: 20px; color: #666; font-size: 0.8em;">
+    <p>© 2026 Airsell Cargo Service Agent | <a href="https://github.com/Airsell-Cargo/airsell-web-portal/wiki">Internal Portal</a></p>
 </footer>
 
 </body>
