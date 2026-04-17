@@ -10,10 +10,26 @@
 - **HTML:** 87.2%
 - **CSS:** 12.8%
 
-*Lightweight and efficient static website for optimal performance.*
+- ## Platform
 
-## 🌐 Platform
+- **Type:** Static Website
+- **Built with:** HTML, CSS
+- **Responsive:** Yes (desktop, tablet, and mobile support)
+- **Browsers Supported:** Chrome, Firefox, Safari, Edge
+- **Deployment:** [Your hosting service, e.g., GitHub Pages]
 
-- **Type:** Static Website  
-- **Compatible Browsers:** Chrome, Firefox, Edge, Safari  
-- **Responsive:** Yes (works on desktop, tablet, and mobile)
+## Platform
+
+- **Type:** Static Website
+- **Technologies:** HTML (87.2%), CSS (12.8%)
+- **Responsive Design:** Yes (desktop, tablet, mobile)
+- **Browsers Supported:** Chrome, Firefox, Safari, Edge
+- **Hosting:** [Your Platform, e.g., GitHub Pages, Netlify]
+
+- ## Platform
+
+- **Type:** Static Website
+- **Technologies Used:** HTML (87.2%), CSS (12.8%)
+- **Responsive Design:** Fully responsive; supports desktop, tablet, and mobile
+- **Browsers Supported:** Chrome, Firefox, Safari, Edge
+- **Hosting Platform:** GitHub Pages
