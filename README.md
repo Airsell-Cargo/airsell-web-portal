@@ -1,2 +1,6 @@
-# airsellcargo-web-portal
-Official digital logistics portal for Airsell Cargo, specializing in IATA-standard air freight and regional exports
+## Features
+- Showcases Airsell Cargo’s full range of services
+- Displays hubs information (HGA & BBO)
+- Highlights client trust and testimonials
+- Responsive web design for all devices
+- Fast loading with optimized HTML and CSS
