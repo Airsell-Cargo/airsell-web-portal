@@ -12,3 +12,8 @@
 
 *Lightweight and efficient static website for optimal performance.*
 
+## 🌐 Platform
+
+- **Type:** Static Website  
+- **Compatible Browsers:** Chrome, Firefox, Edge, Safari  
+- **Responsive:** Yes (works on desktop, tablet, and mobile)
