@@ -1,151 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airsell Cargo | General Cargo & Logistics</title>
-    <style>
-        :root { 
-            --airsell-red: #d32f2f; 
-            --airsell-green: #2e7d32; 
-            --dark-bg: #000000;
-        }
-
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
-
-        /* HEADER: Logo on the Left, Text on the Right */
-        header { 
-            background: var(--dark-bg); 
-            color: white; 
-            padding: 25px 5%; 
-            border-bottom: 4px solid var(--airsell-red);
-        }
-
-        .header-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-
-        .logo { height: 85px; width: auto; }
-        .header-text h1 { margin: 0; font-size: 1.6rem; letter-spacing: 1px; }
-        .header-text p { margin: 2px 0 0 0; color: #adadad; font-size: 0.9rem; }
-<nav style="background:#222; padding:10px; text-align:center;">
-  <a href="index.html" style="color:white; margin:0 15px; text-decoration:none;">Home</a>
-  <a href="air-freight.html" style="color:white; margin:0 15px; text-decoration:none;">Air Freight</a>
-  <a href="general-cargo.html" style="color:white; margin:0 15px; text-decoration:none;">General Cargo</a>
-  <a href="dashboard.php" style="color:white; margin:0 15px; text-decoration:none;">MAWB Records</a>
-  <a href="add_mawb.php" style="color:white; margin:0 15px; text-decoration:none;">Add MAWB</a>
-</nav>
-
-        
-
-        /* TRACKING: Professional Floating Box */
-        .track-section { text-align: center; margin-top: -35px; padding: 0 20px; }
-        .track-box { 
-            background: white; 
-            padding: 30px; 
-            display: inline-block; 
-            border-radius: 10px; 
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15); 
-            width: 100%; 
-            max-width: 600px; 
-        }
-
-        .track-input-group { display: flex; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; }
-        .track-input-group input { border: none; padding: 15px; flex-grow: 1; outline: none; font-size: 1rem; }
-        .btn-track { background: var(--airsell-red); color: white; border: none; padding: 0 30px; cursor: pointer; font-weight: bold; transition: 0.3s; }
-        .btn-track:hover { background: #b71c1c; }
-
-        /* SERVICES: Three Pillars */
-        .services-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 25px; 
-            max-width: 1200px; 
-            margin: 60px auto; 
-            padding: 0 20px; 
-        }
-
-        .service-card { 
-            background: white; 
-            padding: 40px 30px; 
-            border-radius: 8px; 
-            text-align: center; 
-            transition: 0.3s;
-            border-top: 4px solid var(--airsell-green);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-
-        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .icon { font-size: 45px; margin-bottom: 15px; display: block; }
-        .service-card h3 { margin: 10px 0; color: #222; }
-
-        /* FOOTER */
-        footer { background: #eee; text-align: center; padding: 40px 20px; border-top: 1px solid #ddd; }
-        .footer-links a { color: var(--airsell-red); text-decoration: none; font-weight: bold; margin: 0 10px; }
-
-        /* MOBILE FIX */
-        @media (max-width: 768px) {
-            .header-container { flex-direction: column; text-align: center; }
-            .track-input-group { flex-direction: column; }
-            .btn-track { padding: 15px; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airsell Cargo | General Cargo & Logistics</title>
+  <link rel="stylesheet" href="assets/style.css"> <!-- optional external CSS -->
+  <style>
+    :root { --airsell-red:#d32f2f; --airsell-green:#2e7d32; --dark-bg:#000; }
+    body { font-family:'Segoe UI',sans-serif; margin:0; background:#f8f9fa; color:#333; line-height:1.6; }
+    header { background:var(--dark-bg); color:white; padding:25px 5%; border-bottom:4px solid var(--airsell-red); }
+    .header-container { display:flex; align-items:center; gap:20px; max-width:1200px; margin:0 auto; }
+    .logo { height:85px; width:auto; }
+    .header-text h1 { margin:0; font-size:1.6rem; letter-spacing:1px; }
+    .header-text p { margin:2px 0 0; color:#adadad; font-size:0.9rem; }
+    nav { background:#222; padding:10px; text-align:center; }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav a:hover { color:var(--airsell-red); }
+    .track-section { text-align:center; margin-top:-35px; padding:0 20px; }
+    .track-box { background:white; padding:30px; display:inline-block; border-radius:10px; box-shadow:0 8px 30px rgba(0,0,0,0.15); max-width:600px; width:100%; }
+    .track-input-group { display:flex; border:1px solid #ddd; border-radius:5px; overflow:hidden; }
+    .track-input-group input { border:none; padding:15px; flex-grow:1; outline:none; font-size:1rem; }
+    .btn-track { background:var(--airsell-red); color:white; border:none; padding:0 30px; cursor:pointer; font-weight:bold; transition:0.3s; }
+    .btn-track:hover { background:#b71c1c; }
+    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; max-width:1200px; margin:60px auto; padding:0 20px; }
+    .service-card { background:white; padding:40px 30px; border-radius:8px; text-align:center; transition:0.3s; border-top:4px solid var(--airsell-green); box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+    .service-card:hover { transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.1); }
+    .icon { font-size:45px; margin-bottom:15px; display:block; }
+    footer { background:#eee; text-align:center; padding:40px 20px; border-top:1px solid #ddd; }
+    .footer-links a { color:var(--airsell-red); text-decoration:none; font-weight:bold; margin:0 10px; }
+    @media(max-width:768px){ .header-container{flex-direction:column;text-align:center;} .track-input-group{flex-direction:column;} .btn-track{padding:15px;} }
+  </style>
 </head>
 <body>
 
 <header>
-    <div class="header-container">
-        <img src="logo.jpg" alt="Airsell Cargo" class="logo">
-        <div class="header-text">
-            <h1>AIRSELL CARGO</h1>
-            <p>Connecting East Africa to the World | Hargeisa Hub</p>
-        </div>
+  <div class="header-container">
+    <img src="logo.jpg" alt="Airsell Cargo" class="logo">
+    <div class="header-text">
+      <h1>AIRSELL CARGO</h1>
+      <p>Connecting East Africa to the World | Hargeisa Hub</p>
     </div>
+  </div>
 </header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="air-freight.html">Air Freight</a>
+  <a href="general-cargo.html">General Cargo</a>
+  <a href="dashboard.php">MAWB Records</a>
+  <a href="add_mawb.php">Add MAWB</a>
+</nav>
+
 <div class="track-section">
-    <div class="track-box">
-        <h3 style="margin-top:0;">Shipment Tracking</h3>
-        <div class="track-input-group">
-            <input type="text" placeholder="Enter Air Waybill (AWB) Number...">
-            <button class="btn-track">TRACK NOW</button>
-        </div>
-        <p style="font-size: 0.8rem; color: #777; margin-top: 10px;">IATA Resolution 600a Standardized Reporting</p>
+  <div class="track-box">
+    <h3>Shipment Tracking</h3>
+    <div class="track-input-group">
+      <input type="text" placeholder="Enter Air Waybill (AWB) Number...">
+      <button class="btn-track">TRACK NOW</button>
     </div>
+    <p style="font-size:0.8rem; color:#777; margin-top:10px;">IATA Resolution 600a Standardized Reporting</p>
+  </div>
 </div>
 
 <div class="services-grid">
-    <div class="service-card">
-        <span class="icon">📦</span>
-       <a href="general-cargo.html" style="text-decoration:none; color:inherit;"><h3>General Cargo</h3></a>
-        <p>Reliable handling for dry goods, textiles, and electronics. We ensure IATA-standard documentation for every shipment.</p>
-    </div>
-
-    <div class="service-card">
-        <span class="icon">🐐</span>
-        <h3>Livestock Export</h3>
-        <p>Specialized logistics for regional livestock trade with strict adherence to global health and safety protocols.</p>
-    </div>
-
-    <div class="service-card">
-        <span class="icon">🚢</span>
-        <h3>Sea Freight</h3>
-        <p>Strategic consolidation and sea-link solutions for large-scale international trade requirements.</p>
-    </div>
+  <div class="service-card">
+    <span class="icon">📦</span>
+    <a href="general-cargo.html" style="text-decoration:none; color:inherit;"><h3>General Cargo</h3></a>
+    <p>Reliable handling for dry goods, textiles, and electronics. We ensure IATA-standard documentation for every shipment.</p>
+  </div>
+  <div class="service-card">
+    <span class="icon">🐐</span>
+    <h3>Livestock Export</h3>
+    <p>Specialized logistics for regional livestock trade with strict adherence to global health and safety protocols.</p>
+  </div>
+  <div class="service-card">
+    <span class="icon">🚢</span>
+    <h3>Sea Freight</h3>
+    <p>Strategic consolidation and sea-link solutions for large-scale international trade requirements.</p>
+  </div>
 </div>
 
 <footer>
-    <div class="footer-links">
-        <a href="https://github.com/Airsell-Cargo/airsell-web-portal/wiki">Operational Portal</a> | 
-        <a href="#">Contact Us</a>
-    </div>
-    <p style="margin-top: 15px; font-size: 0.9rem; color: #888;">&copy; 2026 Airsell Cargo. All Rights Reserved. ISO 8601 Compliant.</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="air-freight.html">Air Freight</a>
+    <a href="general-cargo.html">General Cargo</a>
+    <a href="dashboard.php">MAWB Records</a>
+  </div>
+  <p>&copy; 2026 Airsell Cargo. All Rights Reserved. ISO 8601 Compliant.</p>
 </footer>
 
 </body>
