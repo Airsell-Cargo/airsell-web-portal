@@ -3,33 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Airsell Cargo | General Cargo & Logistics</title>
-  <link rel="stylesheet" href="assets/style.css"> <!-- optional external CSS -->
-  <style>
-    :root { --airsell-red:#d32f2f; --airsell-green:#2e7d32; --dark-bg:#000; }
-    body { font-family:'Segoe UI',sans-serif; margin:0; background:#f8f9fa; color:#333; line-height:1.6; }
-    header { background:var(--dark-bg); color:white; padding:25px 5%; border-bottom:4px solid var(--airsell-red); }
-    .header-container { display:flex; align-items:center; gap:20px; max-width:1200px; margin:0 auto; }
-    .logo { height:85px; width:auto; }
-    .header-text h1 { margin:0; font-size:1.6rem; letter-spacing:1px; }
-    .header-text p { margin:2px 0 0; color:#adadad; font-size:0.9rem; }
-    nav { background:#222; padding:10px; text-align:center; }
-    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
-    nav a:hover { color:var(--airsell-red); }
-    .track-section { text-align:center; margin-top:-35px; padding:0 20px; }
-    .track-box { background:white; padding:30px; display:inline-block; border-radius:10px; box-shadow:0 8px 30px rgba(0,0,0,0.15); max-width:600px; width:100%; }
-    .track-input-group { display:flex; border:1px solid #ddd; border-radius:5px; overflow:hidden; }
-    .track-input-group input { border:none; padding:15px; flex-grow:1; outline:none; font-size:1rem; }
-    .btn-track { background:var(--airsell-red); color:white; border:none; padding:0 30px; cursor:pointer; font-weight:bold; transition:0.3s; }
-    .btn-track:hover { background:#b71c1c; }
-    .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; max-width:1200px; margin:60px auto; padding:0 20px; }
-    .service-card { background:white; padding:40px 30px; border-radius:8px; text-align:center; transition:0.3s; border-top:4px solid var(--airsell-green); box-shadow:0 4px 12px rgba(0,0,0,0.05); }
-    .service-card:hover { transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.1); }
-    .icon { font-size:45px; margin-bottom:15px; display:block; }
-    footer { background:#eee; text-align:center; padding:40px 20px; border-top:1px solid #ddd; }
-    .footer-links a { color:var(--airsell-red); text-decoration:none; font-weight:bold; margin:0 10px; }
-    @media(max-width:768px){ .header-container{flex-direction:column;text-align:center;} .track-input-group{flex-direction:column;} .btn-track{padding:15px;} }
-  </style>
+  <title>Air Freight Services | Airsell Cargo</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/css/alerts.css">
 </head>
 <body>
 
@@ -45,19 +21,11 @@
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="air-freight.html">Air Freight</a>
+  <a href="air-freight.html" class="active">Air Freight</a>
   <a href="general-cargo.html">General Cargo</a>
   <a href="dashboard.php">MAWB Records</a>
   <a href="add_mawb.php">Add MAWB</a>
 </nav>
-<head>
-  <style>
-    .justified h2,
-    .justified h3 {
-      text-align: center;
-    }
-  </style>
-</head>
 
 <div class="track-section">
   <div class="track-box">
@@ -66,44 +34,42 @@
       <input type="text" placeholder="Enter Air Waybill (AWB) Number...">
       <button class="btn-track">TRACK NOW</button>
     </div>
-    <p style="font-size:0.8rem; color:#777; margin-top:10px;">IATA Resolution 600a Standardized Reporting</p>
+    <p>IATA Resolution 600a Standardized Reporting</p>
   </div>
 </div>
 
-    <div class="iata-box">OFFICIAL IATA CARGOLINK & FIATA COMPLIANT OPERATIONS</div>
-    
-    <h2>Air Freight Forwarding Services</h2>
-    <p>Based in Hargeisa (HGA), Airsell Cargo provides seamless air connectivity to global hubs including Dubai (DXB), Addis Ababa (ADD), and worldwide destinations via our strategic partnership with Ethiopian Airlines (ET).</p>
+<div class="content">
+  <div class="iata-box">OFFICIAL IATA CARGOLINK & FIATA COMPLIANT OPERATIONS</div>
 
-    <h3>Cargo Acceptance Checklist</h3>
-    <ul>
-        <li><strong>AWB Accuracy:</strong> Precise Air Waybill preparation (IATA Reso 600a).</li>
-        <li><strong>Ready for Carriage:</strong> Proper packaging, marking, and labeling.</li>
-        <li><strong>Security:</strong> Full compliance with HGA Airport security screening.</li>
-        <li><strong>Dangerous Goods:</strong> Specialized handling for regulated items.</li>
-    </ul>
+  <h2>Air Freight Forwarding Services</h2>
+  <p>Based in Hargeisa (HGA), Airsell Cargo provides seamless air connectivity to global hubs including Dubai (DXB), Addis Ababa (ADD), and worldwide destinations via our strategic partnerships. Our IATA-certified operations ensure compliant, secure, and timely shipment handling.</p>
 
-    <h3>Volumetric Weight Calculation</h3>
-    <p>As per international standards, freight charges are based on the greater of the actual weight or volumetric weight.</p> 
-  <div>
-    <table class="calc-table">
-        <tr>
-            <th>Service Type</th>
-            <th>Standard Formula</th>
-        </tr>
-        <tr>
-            <td>Standard Air Freight</td>
-            <td>(Length × Width × Height in cm) / 6000</td>
-        </tr>
-    </table>
+  <h3>Cargo Acceptance Checklist</h3>
+  <ul>
+    <li><strong>AWB Accuracy:</strong> Precise Air Waybill preparation (IATA Reso 600a).</li>
+    <li><strong>Ready for Carriage:</strong> Proper packaging, marking, and labeling.</li>
+    <li><strong>Security:</strong> Full compliance with HGA Airport security screening.</li>
+    <li><strong>Dangerous Goods:</strong> Specialized handling for regulated items.</li>
+  </ul>
 
-    <div style="margin-top: 30px; padding: 20px; background: #f0f4f8; border-radius: 5px;">
-        <strong>Need a Quote?</strong> Contact our Hargeisa office at <a href="mailto:contact@airsellcargo.com">contact@airsellcargo.com</a>
-    </div>
+  <h3>Volumetric Weight Calculation</h3>
+  <p>As per international standards, freight charges are based on the greater of the actual weight or volumetric weight.</p>
+  <table class="calc-table">
+    <tr>
+      <th>Service Type</th>
+      <th>Standard Formula</th>
+    </tr>
+    <tr>
+      <td>Standard Air Freight</td>
+      <td>(Length × Width × Height in cm) / 6000</td>
+    </tr>
+  </table>
+
+  <div style="margin-top: 30px; padding: 20px; background: #f0f4f8; border-radius: 5px;">
+    <strong>Need a Quote?</strong> Contact our Hargeisa office at <a href="mailto:contact@airsellcargo.com">contact@airsellcargo.com</a>
+  </div>
 </div>
-<div class="footer">
-    <p>© 2026 Airsell Cargo Service Agent | Last Updated: 2026-04-03</p>
-</div>
+
 <footer>
   <div class="footer-links">
     <a href="index.html">Home</a>
@@ -114,5 +80,6 @@
   <p>&copy; 2026 Airsell Cargo. All Rights Reserved. ISO 8601 Compliant.</p>
 </footer>
 
+<script src="assets/js/tracking.js"></script>
 </body>
 </html>
