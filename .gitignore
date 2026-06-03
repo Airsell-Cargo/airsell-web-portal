@@ -1,0 +1,12 @@
+.env
+.env.local
+.env.*.php
+.env.*.local
+*.log
+node_modules/
+vendor/
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
